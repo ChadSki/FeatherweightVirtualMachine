@@ -1,0 +1,122 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: fvm - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/fvm.res" /d "NDEBUG" /d "_AFXDLL" "D:\FVM\code\FVM_UI\fvm\fvm.rc"" 
+Creating temporary file "C:\DOCUME~1\zhiyong\LOCALS~1\Temp\RSP2B.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/fvm.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\FVM\code\FVM_UI\fvm\BiSplitterWnd.cpp"
+"D:\FVM\code\FVM_UI\fvm\ConfigDialog.cpp"
+"D:\FVM\code\FVM_UI\fvm\CreateDialog.cpp"
+"D:\FVM\code\FVM_UI\fvm\FileView.cpp"
+"D:\FVM\code\FVM_UI\fvm\FilteredFolderDlg.cpp"
+"D:\FVM\code\FVM_UI\fvm\FolderDlg.cpp"
+"D:\FVM\code\FVM_UI\fvm\fvm.cpp"
+"D:\FVM\code\FVM_UI\fvm\FvmBrowser.cpp"
+"D:\FVM\code\FVM_UI\fvm\fvmDoc.cpp"
+"D:\FVM\code\FVM_UI\fvm\fvmView.cpp"
+"D:\FVM\code\FVM_UI\fvm\LeftView.cpp"
+"D:\FVM\code\FVM_UI\fvm\LocalFileListCtrl.cpp"
+"D:\FVM\code\FVM_UI\fvm\MainFrm.cpp"
+"D:\FVM\code\FVM_UI\fvm\MFC64bitFix.cpp"
+"D:\FVM\code\FVM_UI\fvm\PathFunctions.cpp"
+"D:\FVM\code\FVM_UI\fvm\ProcessView.cpp"
+"D:\FVM\code\FVM_UI\fvm\RegView.cpp"
+"D:\FVM\code\FVM_UI\fvm\Utility.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\zhiyong\LOCALS~1\Temp\RSP2B.tmp" 
+Creating temporary file "C:\DOCUME~1\zhiyong\LOCALS~1\Temp\RSP2C.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/fvm.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\FVM\code\FVM_UI\fvm\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\zhiyong\LOCALS~1\Temp\RSP2C.tmp" 
+Creating temporary file "C:\DOCUME~1\zhiyong\LOCALS~1\Temp\RSP2D.tmp" with contents
+[
+Psapi.lib Iphlpapi.lib Ws2_32.lib /nologo /entry:"wWinMainCRTStartup" /subsystem:windows /incremental:no /pdb:"Release/fvm.pdb" /machine:I386 /out:"../fvm.exe" 
+.\Release\BiSplitterWnd.obj
+.\Release\ConfigDialog.obj
+.\Release\CreateDialog.obj
+.\Release\FileView.obj
+.\Release\FilteredFolderDlg.obj
+.\Release\FolderDlg.obj
+.\Release\fvm.obj
+.\Release\FvmBrowser.obj
+.\Release\fvmDoc.obj
+.\Release\fvmView.obj
+.\Release\LeftView.obj
+.\Release\LocalFileListCtrl.obj
+.\Release\MainFrm.obj
+.\Release\MFC64bitFix.obj
+.\Release\PathFunctions.obj
+.\Release\ProcessView.obj
+.\Release\RegView.obj
+.\Release\StdAfx.obj
+.\Release\Utility.obj
+.\Release\fvm.res
+]
+Creating command line "link.exe @C:\DOCUME~1\zhiyong\LOCALS~1\Temp\RSP2D.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+BiSplitterWnd.cpp
+ConfigDialog.cpp
+CreateDialog.cpp
+FileView.cpp
+FilteredFolderDlg.cpp
+FolderDlg.cpp
+fvm.cpp
+FvmBrowser.cpp
+fvmDoc.cpp
+fvmView.cpp
+LeftView.cpp
+LocalFileListCtrl.cpp
+MainFrm.cpp
+MFC64bitFix.cpp
+PathFunctions.cpp
+ProcessView.cpp
+RegView.cpp
+Utility.cpp
+Generating Code...
+Linking...
+LINK : warning LNK4089: all references to "SHLWAPI.dll" discarded by /OPT:REF
+Creating temporary file "C:\DOCUME~1\zhiyong\LOCALS~1\Temp\RSP2F.tmp" with contents
+[
+/nologo /o"Release/fvm.bsc" 
+.\Release\StdAfx.sbr
+.\Release\BiSplitterWnd.sbr
+.\Release\ConfigDialog.sbr
+.\Release\CreateDialog.sbr
+.\Release\FileView.sbr
+.\Release\FilteredFolderDlg.sbr
+.\Release\FolderDlg.sbr
+.\Release\fvm.sbr
+.\Release\FvmBrowser.sbr
+.\Release\fvmDoc.sbr
+.\Release\fvmView.sbr
+.\Release\LeftView.sbr
+.\Release\LocalFileListCtrl.sbr
+.\Release\MainFrm.sbr
+.\Release\MFC64bitFix.sbr
+.\Release\PathFunctions.sbr
+.\Release\ProcessView.sbr
+.\Release\RegView.sbr
+.\Release\Utility.sbr]
+Creating command line "bscmake.exe @C:\DOCUME~1\zhiyong\LOCALS~1\Temp\RSP2F.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+fvm.exe - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

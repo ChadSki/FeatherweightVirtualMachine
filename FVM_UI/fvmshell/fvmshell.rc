@@ -1,0 +1,644 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\fvmshell.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\shell-large.ico"
+IDR_FVMSHETYPE          ICON    DISCARDABLE     "res\\fvmshellDoc.ico"
+IDI_DOWN                ICON    DISCARDABLE     "res\\down.ico"
+IDI_EMPTY               ICON    DISCARDABLE     "res\\empty.ico"
+IDI_UP                  ICON    DISCARDABLE     "res\\up.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_HOTTOOLBAR          BITMAP  DISCARDABLE     "res\\hottoolb.bmp"
+IDB_COLDTOOLBAR         BITMAP  DISCARDABLE     "res\\coldtool.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_TEMP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "S&plit",                      ID_WINDOW_SPLIT
+        MENUITEM SEPARATOR
+        MENUITEM "Large Icons",                 ID_MENU_LARGE_ICONS, CHECKED
+        MENUITEM "Small Icons",                 ID_MENU_SMALL_ICONS
+        MENUITEM "List",                        ID_MENU_LIST
+        MENUITEM "Details",                     ID_MENU_DETAILS
+    END
+    POPUP "Tools"
+    BEGIN
+        MENUITEM "Folder Options...",           ID_FOLDER_OPTIONS
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About fvmshell...",          ID_APP_ABOUT
+    END
+END
+
+IDR_DIRVIEW MENU DISCARDABLE 
+BEGIN
+    POPUP "Folder"
+    BEGIN
+        MENUITEM "Delete",                      ID_DIRVIEW_DELETE
+        MENUITEM "Rename",                      ID_DIRVIEW_RENAME
+    END
+END
+
+IDR_FILEVIEW MENU DISCARDABLE 
+BEGIN
+    POPUP "File View"
+    BEGIN
+        MENUITEM "Rename",                      ID_FILEVIEW_RENAME
+        MENUITEM "Delete",                      ID_FILEVIEW_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "New Folder",                  ID_FILEVIEW_NEWFOLDER
+        MENUITEM SEPARATOR
+        MENUITEM "Properties",                  ID_FILEVIEW_PROPERTIES
+    END
+END
+
+IDR_VIEW_DROP_DOWN MENU DISCARDABLE 
+BEGIN
+    POPUP "View Drop Down"
+    BEGIN
+        MENUITEM "Large Icons",                 ID_MENU_LARGE_ICONS
+        MENUITEM "Small Icons",                 ID_MENU_SMALL_ICONS
+        MENUITEM "List",                        ID_MENU_LIST
+        MENUITEM "Details",                     ID_MENU_DETAILS
+    END
+END
+
+IDR_SHORTCUT MENU DISCARDABLE 
+BEGIN
+    POPUP "Shortcut"
+    BEGIN
+        MENUITEM "Create Shortcut",             ID_SHORTCUT_CREATESHORTCUT
+        MENUITEM "Delete Shortcut",             ID_SHORTCUT_DELETESHORTCUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About fvmshell"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "fvmshell Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2005",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_ENTERSOMETHING DIALOG DISCARDABLE  0, 0, 186, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,31,74,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,105,74,50,14
+    EDITTEXT        IDC_EDIT1,21,32,149,13,ES_AUTOHSCROLL
+    LTEXT           "Static",IDC_TEXT,23,14,40,9
+END
+
+IDD_SAPREFS DIALOG DISCARDABLE  0, 0, 186, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+END
+
+IDD_MAINFRAMEBAR DIALOG DISCARDABLE  0, 0, 401, 14
+STYLE DS_SETFOREGROUND | DS_CONTROL | WS_CHILD
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "GO",IDC_GO,381,0,14,14
+    LTEXT           "Address",IDC_STATIC,4,3,28,8
+    EDITTEXT        IDC_EDIT2,34,1,338,12,ES_AUTOHSCROLL
+END
+
+IDD_SETTING DIALOG DISCARDABLE  0, 0, 188, 155
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,66,134,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,131,134,50,14
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",0x0,7,7,174,124
+END
+
+IDD_SETTING_VIEW DIALOG DISCARDABLE  0, 0, 123, 100
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    CONTROL         "Large Icons",IDC_VIEW_LARGE_ICONS,"Button",
+                    BS_AUTORADIOBUTTON,30,10,54,10
+    CONTROL         "Small Icons",IDC_VIEW_SMALL_ICONS,"Button",
+                    BS_AUTORADIOBUTTON,30,30,54,10
+    CONTROL         "List",IDC_VIEW_LIST,"Button",BS_AUTORADIOBUTTON,30,49,
+                    28,10
+    CONTROL         "Details",IDC_VIEW1_DETAILS,"Button",BS_AUTORADIOBUTTON,
+                    30,70,39,10
+END
+
+IDD_SHORTCUT DIALOG DISCARDABLE  0, 0, 219, 94
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,50,73,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,107,73,50,14
+    PUSHBUTTON      "Browse...",IDC_SHORTCUT_BROWS,162,73,50,14
+    EDITTEXT        IDC_SHORTCUT_EDIT,41,38,161,13,ES_AUTOHSCROLL
+    LTEXT           "Open:",IDC_STATIC,13,40,20,8
+    LTEXT           "Please enter full path of a program.",IDC_STATIC,16,18,
+                    110,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "fvmshell MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "fvmshell\0"
+            VALUE "LegalCopyright", "Copyright (C) 2005\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "fvmshell.EXE\0"
+            VALUE "ProductName", "fvmshell Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_ENTERSOMETHING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_SAPREFS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_MAINFRAMEBAR, DIALOG
+    BEGIN
+        RIGHTMARGIN, 373
+    END
+
+    IDD_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 181
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 148
+    END
+
+    IDD_SETTING_VIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 116
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_SHORTCUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 212
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "fvmshell\n\nFvmshe\n\n\nFvmshell.Document\nFvmshe Document"
+    IDS_ERRORMSG_FILENAMEINVALID 
+                            "A filename can't contain one of the following characters:\n/ \\ : * ? "" < > |"
+    IDS_HEADER_FILENAME     "Filename"
+    IDS_HEADER_FILESIZE     "Size"
+    IDS_HEADER_FILETYPE     "Type"
+    IDS_HEADER_LASTMODIFIED "Last Modified"
+    IDS_SIZE_BYTES          "bytes"
+    IDS_SIZE_GB             "GB"
+    IDS_SIZE_KBS            "KB"
+    IDS_SIZE_MBS            "MB"
+    IDS_INPUTDIALOGTITLE_CREATEDIR "Enter directory name"
+    IDS_INPUTDIALOGTEXT_CREATEDIR 
+                            "Please enter the name of the new directory:"
+    IDS_ERRORMSG_ENTERSTRING "You have to enter a string!"
+    IDS_ERRORMSG_VIEWEDIT_NODEFPROG "Error, no default program specified"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "fvmshell"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+    IDS_FOLDER              "Folders"
+    ID_GO_BACK              "Goes back one step.\nBack"
+    IDS_BACK                "Back"
+    ID_GO_FORWARD           "Goes forward one step.\nForward"
+    IDS_FORWARD             "Forward"
+    ID_VIEW_UP              "Go to the parent folder.\nUp"
+    IDS_UP                  "Up"
+    ID_VIEW_REFRESH         "Refreshes the contents of the current page.\nRefresh"
+    IDS_REFRESH             "Refresh"
+    ID_VIEW_FOLDER          "Folder Tree View.\nFolder Tree"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_GO_SEARCH_THE_WEB    "Opens your search page.\nSearch the Internet"
+    IDS_SEARCH              "Search"
+    ID_FAVORITES_DROPDOWN   "View list of your personal favorites.\nFavorites"
+    IDS_FAVORITES           "Favorites"
+    IDS_PRINT               "Print"
+    ID_FONT_DROPDOWN        "Change font size.\nFonts"
+    IDS_FONT                "Font"
+    IDS_ADDRESS             "Address"
+    IDS_ERRORMSG_PATHNOTFOUND "The path you entered could not be found!"
+    IDS_VIEW_COPY           "Copy"
+    ID_VIEW_COPY            "Copy.\nCopy"
+    IDS_VIEW_PASTE          "Paste"
+    ID_VIEW_PASTE           "Paste.\nPaste"
+    IDS_VIEW_VIEW           "View"
+    IDS_DIRINFO_SELECTED_FILES "Selected %d files with %I64d bytes."
+    IDS_DIRINFO_SELECTED_FILE "Selected 1 file with %I64d bytes."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DIRINFO_SELECTED_DIR "Selected 1 folder."
+    IDS_DIRINFO_SELECTED_DIRS "Selected %d folders."
+    IDS_DIRINFO_SELECTED_DIRANDFILE 
+                            "Selected 1 folder and 1 file with %I64d bytes."
+    IDS_DIRINFO_SELECTED_DIRANDFILES 
+                            "Selected 1 folder and %d files with %I64d bytes."
+    IDS_DIRINFO_SELECTED_DIRSANDFILE 
+                            "Selected %d folders and 1 file with %I64d bytes."
+    IDS_DIRINFO_SELECTED_DIRSANDFILES 
+                            "Selected %d folders and %d files with at least %I64d bytes"
+    IDS_DIRINFO_EMPTY       "Empty directory."
+    IDS_DIRINFO_FILE        "1 file with %I64d bytes."
+    IDS_DIRINFO_FILES       "%d files with %I64d bytes."
+    IDS_DIRINFO_DIR         "1 folder."
+    IDS_DIRINFO_DIRS        "%d folders."
+    IDS_DIRINFO_DIRANDFILE  "1 folder and 1 file with %I64d bytes."
+    IDS_DIRINFO_DIRANDFILES "1 folder and %d files with at least %I64d bytes."
+    IDS_DIRINFO_DIRSANDFILE "%d folders and 1 file with %I64d bytes."
+    IDS_DIRINFO_DIRSANDFILES 
+                            "%d folders and %d files with at least %I64d bytes."
+    ID_VIEW_VIEW            "View\nView"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_VIEW_DELETE         "Delete"
+    ID_VIEW_DELETE          "Delete\nDelete"
+    ID_SEPARATOR1           "Separator1"
+    ID_SEPARATOR2           "Separator2"
+    ID_SEPARATOR3           "Separator3"
+    ID_VIEW_SHORTCUT        "Shortcut\nShortcut"
+    IDS_VIEW_SHORTCUT       "Shortcut"
+    ID_VIEW_RUN             "Run\nRun"
+    IDS_VIEW_RUN            "Run"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\fvmshell.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

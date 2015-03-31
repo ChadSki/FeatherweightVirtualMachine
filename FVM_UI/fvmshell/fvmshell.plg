@@ -1,0 +1,90 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: fvmshell - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/fvmshell.res" /d "NDEBUG" /d "_AFXDLL" "D:\FVM\FVM_UI\fvmshell\fvmshell.rc"" 
+Creating temporary file "D:\DOCUME~1\yuyang\LOCALS~1\Temp\RSP30.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/fvmshell.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\FVM\FVM_UI\fvmshell\BiSplitterWnd.cpp"
+"D:\FVM\FVM_UI\fvmshell\CreateShortcut.cpp"
+"D:\FVM\FVM_UI\fvmshell\DirTreeCtrl.cpp"
+"D:\FVM\FVM_UI\fvmshell\EnterSomething.cpp"
+"D:\FVM\FVM_UI\fvmshell\FvmDirlView.cpp"
+"D:\FVM\FVM_UI\fvmshell\FvmFileView.cpp"
+"D:\FVM\FVM_UI\fvmshell\fvmshell.cpp"
+"D:\FVM\FVM_UI\fvmshell\fvmshellDoc.cpp"
+"D:\FVM\FVM_UI\fvmshell\LocalFileListCtrl.cpp"
+"D:\FVM\FVM_UI\fvmshell\MainFrm.cpp"
+"D:\FVM\FVM_UI\fvmshell\MFC64bitFix.cpp"
+"D:\FVM\FVM_UI\fvmshell\PathFunctions.cpp"
+"D:\FVM\FVM_UI\fvmshell\Setting.cpp"
+"D:\FVM\FVM_UI\fvmshell\SettingView.cpp"
+"D:\FVM\FVM_UI\fvmshell\ShortCutView.cpp"
+"D:\FVM\FVM_UI\fvmshell\misc\TransparentDialogBar.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\yuyang\LOCALS~1\Temp\RSP30.tmp" 
+Creating temporary file "D:\DOCUME~1\yuyang\LOCALS~1\Temp\RSP31.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/fvmshell.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\FVM\FVM_UI\fvmshell\StdAfx.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\yuyang\LOCALS~1\Temp\RSP31.tmp" 
+Creating temporary file "D:\DOCUME~1\yuyang\LOCALS~1\Temp\RSP32.tmp" with contents
+[
+/nologo /entry:"wWinMainCRTStartup" /subsystem:windows /incremental:no /pdb:"Release/fvmshell.pdb" /machine:I386 /out:"../fvmshell.exe" 
+.\Release\BiSplitterWnd.obj
+.\Release\CreateShortcut.obj
+.\Release\DirTreeCtrl.obj
+.\Release\EnterSomething.obj
+.\Release\FvmDirlView.obj
+.\Release\FvmFileView.obj
+.\Release\fvmshell.obj
+.\Release\fvmshellDoc.obj
+.\Release\LocalFileListCtrl.obj
+.\Release\MainFrm.obj
+.\Release\MFC64bitFix.obj
+.\Release\PathFunctions.obj
+.\Release\Setting.obj
+.\Release\SettingView.obj
+.\Release\ShortCutView.obj
+.\Release\StdAfx.obj
+.\Release\TransparentDialogBar.obj
+.\Release\fvmshell.res
+]
+Creating command line "link.exe @D:\DOCUME~1\yuyang\LOCALS~1\Temp\RSP32.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+BiSplitterWnd.cpp
+CreateShortcut.cpp
+DirTreeCtrl.cpp
+EnterSomething.cpp
+FvmDirlView.cpp
+FvmFileView.cpp
+fvmshell.cpp
+fvmshellDoc.cpp
+LocalFileListCtrl.cpp
+MainFrm.cpp
+MFC64bitFix.cpp
+PathFunctions.cpp
+Setting.cpp
+SettingView.cpp
+ShortCutView.cpp
+TransparentDialogBar.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+fvmshell.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: fvmdll - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Shubho\LOCALS~1\Temp\RSP2F3.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "FVMDLL_EXPORTS" /FR"Release/" /Fp"Release/fvmdll.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"Z:\FVM-Final\UserHook\fvmdll\fvmdll.cpp"
+"Z:\FVM-Final\UserHook\fvmdll\fvmuser.cpp"
+"Z:\FVM-Final\UserHook\fvmdll\fvmwin.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Shubho\LOCALS~1\Temp\RSP2F3.tmp" 
+Creating temporary file "C:\DOCUME~1\Shubho\LOCALS~1\Temp\RSP2F4.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib detours.lib /nologo /dll /incremental:no /pdb:"Release/fvmdll.pdb" /machine:I386 /def:".\fvmdll.def" /out:"Release/fvmdll.dll" /implib:"Release/fvmdll.lib" 
+".\Release\fvmdll.obj"
+".\Release\fvmuser.obj"
+".\Release\fvmwin.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\Shubho\LOCALS~1\Temp\RSP2F4.tmp"
+<h3>Output Window</h3>
+Compiling...
+fvmdll.cpp
+fvmuser.cpp
+fvmwin.cpp
+Z:\FVM-Final\UserHook\fvmdll\fvmwin.cpp(58) : warning C4273: 'ShellProc' : inconsistent dll linkage.  dllexport assumed.
+Z:\FVM-Final\UserHook\fvmdll\fvmwin.cpp(98) : warning C4273: 'RemoveHook' : inconsistent dll linkage.  dllexport assumed.
+Linking...
+LINK : fatal error LNK1181: cannot open input file "detours.lib"
+Error executing link.exe.
+
+
+
+<h3>Results</h3>
+fvmdll.dll - 1 error(s), 2 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,32 @@
+LIBRARY		FVMDLL
+
+DESCRIPTION "FVM Hooking DLL."
+
+EXPORTS
+	
+		
+		MyGlobalAddAtomA				@105	NONAME
+		MyGlobalAddAtomW				@106	NONAME
+
+		MyDdeCreateStringHandleA		@107	NONAME
+		MyDdeCreateStringHandleW		@108	NONAME
+		MySendMessageA					@109    NONAME
+		MySendMessageW					@110    NONAME
+		MySendMessageTimeoutA			@111	NONAME
+		MySendMessageTimeoutW			@112    NONAME
+		MySendNotifyMessageA			@113	NONAME
+		MySendNotifyMessageW			@114	NONAME
+		MySendMessageCallbackA			@115	NONAME
+		MySendMessageCallbackW			@116	NONAME
+		MyPostMessageA					@117	NONAME
+		MyPostMessageW					@118	NONAME
+		MyPostThreadMessageA			@119	NONAME
+		MyPostThreadMessageW			@120	NONAME
+
+		MyFindWindowA					@121    NONAME
+		MyFindWindowW					@122	NONAME
+		MyFindWindowExA					@123	NONAME
+		MyFindWindowExW					@124	NONAME
+		MyEnumWindows					@125	NONAME
+
+		

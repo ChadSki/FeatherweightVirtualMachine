@@ -1,0 +1,14 @@
+TARGETNAME = hooksys
+TARGETPATH = bin
+TARGETTYPE = DRIVER
+
+SOURCES = fvm_vm.c \
+          fvm_table.c \
+          fvm_util.c \
+          fvm_file.c \
+          fvm_fileOpt.c \
+          fvm_reg.c \
+          fvm_obj.c \
+          fvm_daemon.c \
+          hooksys.c \
+          hooksys.rc
