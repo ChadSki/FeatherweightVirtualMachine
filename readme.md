@@ -1,6 +1,6 @@
 # Featherweight Virtual Machine
 
-This repo is a fork of the [Featherweight Virtual Machine project hosted at 
+This repo is a mirror of the [Featherweight Virtual Machine project hosted at 
 Sourceforge](http://sourceforge.net/projects/fvm-rni/).
 
 Featherweight Virtual Machine (FVM) is an OS-level virtual machine for Windows 
